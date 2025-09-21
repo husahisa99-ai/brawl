@@ -1,0 +1,709 @@
+
+        @font-face {
+            font-family: 'SupercellText-Regular';
+            src: url('https://store.supercell.com/fonts/SupercellText-Regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'Lilita';
+            src: url('https://store.supercell.com/fonts/LilitaOne-Regular.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'SupercellText-Bold';
+            src: url('https://store.supercell.com/fonts/SupercellText-Bold.woff2') format('woff2');
+        }
+        @font-face {
+            font-family: 'SupercellText-Medium';
+            src: url('https://store.supercell.com/fonts/SupercellText-Medium.woff2') format('woff2');
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #2e36f3;
+            color: white;
+            font-family: 'SupercellText-Regular', system-ui, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        
+        .PdpProductHero_ProductHeroContainer {
+            padding: 40px 20px 32px;
+            position: relative;
+            z-index: 1;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .PdpProductHero_ProductHeroHeader {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        
+        .BrawlPdpProductHeroHeader_Title {
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            -webkit-text-stroke-width: 0.075em !important;
+            font-family: 'Lilita', system-ui, sans-serif;
+            font-size: clamp(2.125rem, 1.857rem + 1.19vw, 2.75rem);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin: 0;
+            max-width: 20ch;
+            padding: 0;
+            paint-order: stroke;
+            text-shadow: rgb(0, 0, 0) 0px 0.075em 0px, rgb(0, 0, 0) -0.02em 0.075em 0px, rgb(0, 0, 0) 0.02em 0.075em 0px !important;
+            text-transform: uppercase;
+            text-wrap: balance;
+        }
+        
+        .BrawlPdpProductHeroHeader_PdpHeroHeaderContainer {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            height: 24px;
+            justify-content: center;
+        }
+        
+        .BrawlPdpProductHeroHeader_iconWrapper {
+            align-items: center;
+            display: flex;
+            height: 24px;
+            justify-content: center;
+            position: relative;
+            width: 24px;
+        }
+        
+        .BrawlPdpProductHeroHeader_iconWrapper img {
+            height: 24px;
+            object-fit: contain;
+            width: 24px;
+        }
+        
+        .BrawlPdpProductHeroHeader_HeaderText {
+            align-items: baseline;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .storeTypography_outlined {
+            -webkit-text-stroke: 0.02em rgb(0, 0, 0);
+            font-family: 'Lilita', system-ui, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            text-shadow: rgb(0, 0, 0) 0px 0.125em 0px;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        
+        .PdpProductHero_ProductHero {
+            align-items: center;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            flex-flow: column;
+            height: auto;
+            justify-content: center;
+            margin: 16px auto 0;
+            max-width: 824px;
+            padding: 0 16px;
+            width: 100%;
+        }
+        
+        .BrawlPdpProductHero_ContainerWrapper {
+            display: flex;
+            flex-flow: column;
+            height: auto;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 600px;
+            position: relative;
+            transform: skewX(-4deg);
+            width: 100%;
+        }
+        
+        .BrawlContainer_Container {
+            background: radial-gradient(rgb(168, 255, 136) 5%, rgb(37, 214, 18) 100%);
+            border-radius: 8px;
+            border: 2.5px solid rgb(0, 0, 0);
+            box-shadow: rgb(0, 0, 0) 4px 4px 0px 0px;
+            display: flex;
+            flex-direction: column;
+            height: 360px;
+            justify-content: space-between;
+            max-width: 100%;
+            min-height: 360px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .flare_imageContainer {
+            align-items: center;
+            display: flex;
+            inset: 0;
+            justify-content: center;
+            overflow: hidden;
+            position: absolute;
+        }
+        
+        .flare_bgFlare {
+            background-image: url("https://store.supercell.com/_next/static/media/shop_item_bg_flare.7dc868b0.png");
+            background-position: 50% center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            height: 427px;
+            left: -60px;
+            opacity: 1;
+            position: absolute;
+            top: -36px;
+            width: 715px;
+        }
+        
+        .BrawlStarsOfferCardContent_SingleItemContainer {
+            align-items: center;
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .BrawlStarsOfferCardContent_Item {
+            height: 142px;
+            min-width: 90px;
+            position: absolute;
+            width: 50%;
+        }
+        
+        .BrawlItem_SingleItemCard {
+            display: flex;
+            flex-direction: column;
+            height: 142px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .BrawlItem_ProductImage {
+            align-items: center;
+            display: flex;
+            height: 142px;
+            inset: 0;
+            justify-content: center;
+            position: absolute;
+            transform: skewX(4deg);
+            width: 100%;
+        }
+        
+        .BrawlItem_ProductImage img {
+            height: 142px;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: unset;
+            object-fit: contain;
+            padding: 4px 0;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .gameStoreProduct_Content {
+            margin: 0 auto;
+            max-width: 90%;
+            padding: 0 32px 32px;
+            position: relative;
+            text-align: center;
+            width: 648px;
+            z-index: 2;
+        }
+        
+        .PdpHeroFooter_FooterContainer {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: unset;
+            gap: 24px;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .BrawlStarsCardBonus_cardBonusContainer {
+            display: flex;
+            height: 38px;
+            justify-content: center;
+            position: relative;
+            top: unset;
+            width: 100%;
+            z-index: -1;
+        }
+        
+        .BrawlStarsCardBonus_cardBonusContent {
+            align-items: center;
+            background: linear-gradient(291deg, rgb(4, 4, 7) 51.69%, rgb(62, 53, 74) 72.36%);
+            border-radius: 10px;
+            border: 0.156em solid rgb(0, 0, 0);
+            display: flex;
+            filter: drop-shadow(rgba(0, 0, 0, 0.22) 0px 0px 4px);
+            flex-shrink: 0;
+            gap: 8px;
+            height: 38px;
+            max-width: 400px;
+            padding-left: 20px;
+            transform: translateZ(0px);
+            width: 100%;
+        }
+        
+        .BrawlStarsCardBonus_plusIcon {
+            left: -20px;
+            position: absolute;
+            top: -30px;
+            transform: skewX(0deg);
+            width: 39px;
+        }
+        
+        .BrawlStarsCardBonus_Title {
+            background: linear-gradient(-120deg, black, rgb(50, 50, 50));
+            border-top-right-radius: 2px;
+            font-size: 12px !important;
+            left: 0;
+            padding-bottom: 3px;
+            padding: 3px 12px 3px 26px;
+            position: absolute;
+            top: -19px;
+            transform: skewX(0deg);
+            z-index: -1;
+        }
+        
+        .BrawlStarsCardBonus_title {
+            -webkit-text-stroke: 0.04em rgb(0, 0, 0);
+            color: #eeeeee;
+            font-family: 'Lilita', system-ui, sans-serif;
+            font-weight: 400;
+            letter-spacing: -0.01em !important;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            paint-order: stroke;
+            text-align: left;
+            text-shadow: none;
+            text-transform: uppercase !important;
+            z-index: 1;
+        }
+        
+        .BrawlStarsCardBonus_BonusContent {
+            display: flex;
+            flex-grow: 1;
+            height: 32px;
+            justify-content: flex-end;
+            position: relative;
+            transform: skewX(0deg);
+        }
+        
+        .BrawlStarsCardBonus_BonusContentTitleWrapper {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 65px;
+            width: 309px;
+        }
+        
+        .BrawlStarsCardBonus_BonusContentTitleWrapper h4 {
+            -webkit-text-stroke: 0.1em rgb(0, 0, 0);
+            direction: ltr;
+            font-family: 'Lilita', system-ui, sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            paint-order: stroke;
+            text-shadow: rgb(0, 0, 0) 0px 0.1em 0px, rgb(0, 0, 0) -0.03em 0.1em 0px, rgb(0, 0, 0) 0.03em 0.1em 0px;
+            text-transform: uppercase;
+        }
+        
+        .BrawlStarsCardBonus_bonusItems {
+            bottom: 5px;
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+            position: absolute;
+            width: 65px;
+            z-index: 1;
+        }
+        
+        .BrawlStarsCardBonus_bonusItemImage {
+            bottom: -2px;
+            height: 66px;
+            right: 4px;
+            position: absolute;
+            width: 66px;
+        }
+        
+        .BrawlStarsCardBonus_bonusItemImage img {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            width: 100%;
+        }
+        
+        .BrawlStarsCardBonus_FlareWrapper {
+            border-radius: 6px;
+            display: flex;
+            height: 32px;
+            right: 0;
+            overflow: hidden;
+            position: absolute;
+            transform: skewX(0deg);
+            width: 72px;
+            z-index: -1;
+        }
+        
+        .BrawlStarsCardBonus_FlareContainer {
+            align-items: center;
+            display: flex;
+            height: 32px;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            transform: skewX(-4deg);
+            width: 72px;
+        }
+        
+        .BrawlStarsCardBonus_flare {
+            background-image: url("https://store.supercell.com/_next/static/media/rays.44d9d3ab.png");
+            background-position: 50% center;
+            background-size: cover;
+            height: 144px;
+            width: 207px;
+        }
+        
+        .PdpHeroFooter_Footer {
+            align-items: center;
+            display: flex;
+            flex-flow: row;
+            gap: 16px;
+            justify-content: space-between;
+            max-width: 600px;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .Tags_TagsContainer {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        
+        .PointsTag_Container {
+            align-items: center;
+            display: flex;
+            filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 0px);
+            height: 26px;
+            position: relative;
+            text-wrap: nowrap;
+        }
+        
+        .PointsTag_TagStart {
+            background-image: url("https://store.supercell.com/images/components/card/tag-2x-light-left.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 26px;
+            width: 8px;
+        }
+        
+        .PointsTag_TagMiddle {
+            align-items: center;
+            background-image: url("https://store.supercell.com/images/components/card/tag-2x-light-middle.png");
+            background-repeat: repeat-x;
+            background-size: contain;
+            color: black;
+            display: flex;
+            height: 26px;
+            margin: 0 -1px;
+            text-wrap-style: initial;
+            width: auto;
+        }
+        
+        .PointsTag_Icon {
+            background-image: url("https://store.supercell.com/images/components/card/idr-icon.svg");
+            background-position-y: 1px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 16px;
+            margin-left: 4px;
+            width: 24px;
+            z-index: 1;
+        }
+        
+        .PointsTag_PointsLabel {
+            font-family: 'SupercellText-Bold', system-ui, sans-serif;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0 7px 0 3px;
+            padding: 0;
+            z-index: 1;
+        }
+        
+        .PointsTag_TagEnd {
+            background-image: url("https://store.supercell.com/images/components/card/tag-2x-light-right.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 26px;
+            width: 8px;
+        }
+        
+        .Button_Button {
+            align-items: center;
+            background: rgb(240, 240, 240);
+            border-color: rgb(0, 0, 0);
+            border-radius: 12px;
+            border-style: solid;
+            border-width: 3px;
+            box-shadow: rgb(255, 255, 255) 0px 3px 0px inset;
+            color: black;
+            cursor: pointer;
+            display: flex;
+            font-family: 'SupercellText-Medium', system-ui, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            height: 48px;
+            justify-content: center;
+            line-height: 1.5;
+            margin-left: auto;
+            min-width: 100px;
+            outline: inherit;
+            padding: 0 20px;
+            position: relative;
+            transition: scale 0.2s ease-in-out;
+            z-index: 5;
+        }
+        
+        .BuyButton_ContentWrapper {
+            align-items: center;
+            display: flex;
+            text-wrap: nowrap;
+        }
+        
+        .BuyButton_Icon {
+            margin-right: 8px;
+        }
+        
+        .info {
+            align-items: center;
+            background-color: #2e36f3;
+            border-top: 2px solid rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-start;
+            padding: 56px 0 128px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .info_title {
+            -webkit-text-stroke: 0.02em rgb(0, 0, 0);
+            color: white;
+            font-family: 'Lilita', system-ui, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            line-height: 1;
+            margin: 0;
+            padding: 24px 0;
+            text-shadow: rgb(0, 0, 0) 0px 0.125em 0px;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        
+        .info_InfoWrapper {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            padding: 0 16px;
+            row-gap: 16px;
+            width: 100%;
+        }
+        
+        .info_productInfo {
+            align-items: center;
+            display: flex;
+            gap: 24px;
+            margin: 0 auto;
+            padding: 0 16px;
+            position: relative;
+            width: 100%;
+        }
+        
+        .info_bonusImg {
+            align-items: center;
+            display: inline-flex;
+            flex-shrink: 0;
+            height: 80px;
+            justify-content: center;
+            width: 80px;
+        }
+        
+        .info_bonusImg img {
+            height: 52px;
+            width: auto;
+        }
+        
+        .storeTypography_font-supercellText {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            text-align: start;
+            z-index: 1;
+        }
+        
+        .IDRInfo_Container {
+            align-items: center;
+            display: flex;
+            gap: 24px;
+            justify-content: flex-start;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        
+        .IDRInfo_ImageContainer {
+            align-items: center;
+            display: flex;
+            flex-shrink: 0;
+            height: 80px;
+            justify-content: center;
+            width: 80px;
+        }
+        
+        .IDRInfo_ImageContainer img {
+            height: 44px;
+            width: auto;
+        }
+        
+        .IDRInfo_Text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            text-align: start;
+        }
+        
+        .IDRInfo_Cta {
+            align-items: center;
+            color: white;
+            display: flex;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 8px;
+            text-align: start;
+            text-decoration-line: none;
+        }
+        
+        /* Responsive media queries */
+        @media (max-width: 768px) {
+            .PdpProductHero_ProductHeroContainer {
+                padding: 20px 10px 16px;
+            }
+            
+            .BrawlContainer_Container {
+                height: 300px;
+                min-height: 300px;
+            }
+            
+            .BrawlStarsOfferCardContent_Item {
+                height: 120px;
+            }
+            
+            .BrawlItem_ProductImage {
+                height: 120px;
+            }
+            
+            .BrawlItem_ProductImage img {
+                height: 120px;
+            }
+            
+            .gameStoreProduct_Content {
+                max-width: 100%;
+                padding: 0 16px 16px;
+            }
+            
+            .PdpHeroFooter_Footer {
+                flex-direction: column;
+                gap: 12px;
+            }
+            
+            .info_productInfo, .IDRInfo_Container {
+                flex-direction: column;
+                text-align: center;
+                gap: 16px;
+            }
+            
+            .storeTypography_font-supercellText {
+                text-align: center;
+            }
+            
+            .BrawlStarsCardBonus_cardBonusContent {
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .BrawlContainer_Container {
+                height: 250px;
+                min-height: 250px;
+            }
+            
+            .BrawlStarsOfferCardContent_Item {
+                height: 100px;
+            }
+            
+            .BrawlItem_ProductImage {
+                height: 100px;
+            }
+            
+            .BrawlItem_ProductImage img {
+                height: 100px;
+            }
+            
+            .BrawlPdpProductHeroHeader_Title {
+                font-size: 1.8rem;
+            }
+            
+            .storeTypography_outlined {
+                font-size: 16px;
+            }
+            
+            .info_bonusImg {
+                height: 60px;
+                width: 60px;
+            }
+            
+            .info_bonusImg img {
+                height: 40px;
+            }
+            
+            .IDRInfo_ImageContainer {
+                height: 60px;
+                width: 60px;
+            }
+            
+            .IDRInfo_ImageContainer img {
+                height: 35px;
+            }
+        }
